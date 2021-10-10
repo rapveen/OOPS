@@ -71,7 +71,7 @@ int main() {
     pA = &c;
     pA->f(2);    //B::f  (Since f is virtual in A, so basically we should be invoking C::f  but since C has not overridden f and
                           //has inherited f from B, so B::f is called
-    pA->g(3.2);  //A::g
+    pA->g(3.2);  //C::g
     pA->h(&a);   //A::h
     pA->h(&b);   //A::h  //up cast possible
     cout << "--------------------" << endl;
